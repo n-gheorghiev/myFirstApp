@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
@@ -13,15 +14,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var orangeView: UIView!
     @IBOutlet weak var greenView: UIView!
     
+    let blueView = UIView(frame: .zero)
+    
     @IBOutlet weak var turnButton: UIButton!
         
+    @IBOutlet weak var redViewHeightConstraint: NSLayoutConstraint!
+    
     // MARK: - Системные функции
 
     // экран БЫЛ загружен
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let arrayView = [redView, orangeView, greenView]
+        let arrayView = [redView, orangeView, greenView, blueView]
         
         for view in arrayView {
             configureView(view!)
@@ -30,12 +35,21 @@ class ViewController: UIViewController {
 //        configureView(redView)
 //        configureView(orangeView)
 //        configureView(greenView)
+        
+        blueView.backgroundColor = .blue
+        view.addSubview(blueView)
+        
+        blueView.snp.makeConstraints { make in
+            make.width.height.equalTo(100)
+            make.centerX.equalToSuperview()
+            make.top.equalTo(greenView.snp.bottom).offset(32)
+        }
     }
     
     // MARK: - Пользовательские функции
     
     func configureView(_ view: UIView) {
-        view.layer.cornerRadius = 100
+        view.layer.cornerRadius = redViewHeightConstraint.constant / 2
         view.layer.borderWidth = 2
         view.layer.borderColor = UIColor.black.cgColor
         view.backgroundColor = .clear
