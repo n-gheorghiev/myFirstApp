@@ -32,10 +32,6 @@ class ViewController: UIViewController {
             configureView(view!)
         }
         
-//        configureView(redView)
-//        configureView(orangeView)
-//        configureView(greenView)
-        
         blueView.backgroundColor = .blue
         view.addSubview(blueView)
         
