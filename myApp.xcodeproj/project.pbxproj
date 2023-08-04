@@ -9,22 +9,24 @@
 /* Begin PBXBuildFile section */
 		F45EF58B2A7AEC3800286386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45EF58A2A7AEC3800286386 /* AppDelegate.swift */; };
 		F45EF58D2A7AEC3800286386 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45EF58C2A7AEC3800286386 /* SceneDelegate.swift */; };
-		F45EF58F2A7AEC3800286386 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45EF58E2A7AEC3800286386 /* ViewController.swift */; };
+		F45EF58F2A7AEC3800286386 /* SvetoforController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45EF58E2A7AEC3800286386 /* SvetoforController.swift */; };
 		F45EF5922A7AEC3800286386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45EF5902A7AEC3800286386 /* Main.storyboard */; };
 		F45EF5942A7AEC3B00286386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45EF5932A7AEC3B00286386 /* Assets.xcassets */; };
 		F45EF5972A7AEC3B00286386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45EF5952A7AEC3B00286386 /* LaunchScreen.storyboard */; };
 		F45EF5A02A7BF44600286386 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F45EF59F2A7BF44600286386 /* SnapKit */; };
+		F4CEBB842A7D6F15008C7CE4 /* SvetoforSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CEBB832A7D6F15008C7CE4 /* SvetoforSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F45EF5872A7AEC3800286386 /* myApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45EF58A2A7AEC3800286386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F45EF58C2A7AEC3800286386 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F45EF58E2A7AEC3800286386 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F45EF58E2A7AEC3800286386 /* SvetoforController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvetoforController.swift; sourceTree = "<group>"; };
 		F45EF5912A7AEC3800286386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F45EF5932A7AEC3B00286386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F45EF5962A7AEC3B00286386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F45EF5982A7AEC3B00286386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4CEBB832A7D6F15008C7CE4 /* SvetoforSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvetoforSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 			children = (
 				F45EF58A2A7AEC3800286386 /* AppDelegate.swift */,
 				F45EF58C2A7AEC3800286386 /* SceneDelegate.swift */,
-				F45EF58E2A7AEC3800286386 /* ViewController.swift */,
+				F45EF58E2A7AEC3800286386 /* SvetoforController.swift */,
+				F4CEBB832A7D6F15008C7CE4 /* SvetoforSectionView.swift */,
 				F45EF5902A7AEC3800286386 /* Main.storyboard */,
 				F45EF5932A7AEC3B00286386 /* Assets.xcassets */,
 				F45EF5952A7AEC3B00286386 /* LaunchScreen.storyboard */,
@@ -146,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F45EF58F2A7AEC3800286386 /* ViewController.swift in Sources */,
+				F4CEBB842A7D6F15008C7CE4 /* SvetoforSectionView.swift in Sources */,
+				F45EF58F2A7AEC3800286386 /* SvetoforController.swift in Sources */,
 				F45EF58B2A7AEC3800286386 /* AppDelegate.swift in Sources */,
 				F45EF58D2A7AEC3800286386 /* SceneDelegate.swift in Sources */,
 			);

@@ -8,15 +8,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Svetofor Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SvetoforController" customModule="myApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfH-wt-tIc">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfH-wt-tIc" customClass="SvetoforSectionView" customModule="myApp" customModuleProvider="target">
                                 <rect key="frame" x="145" y="44" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
@@ -24,11 +24,11 @@
                                     <constraint firstAttribute="height" constant="100" id="7qH-r5-stS"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Feb-DU-zoy">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Feb-DU-zoy" customClass="SvetoforSectionView" customModule="myApp" customModuleProvider="target">
                                 <rect key="frame" x="145" y="188" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3h-d9-SPc">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3h-d9-SPc" customClass="SvetoforSectionView" customModule="myApp" customModuleProvider="target">
                                 <rect key="frame" x="145" y="332" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
@@ -64,10 +64,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenView" destination="c3h-d9-SPc" id="Xb5-18-bV0"/>
-                        <outlet property="orangeView" destination="Feb-DU-zoy" id="lgs-x8-QS4"/>
-                        <outlet property="redView" destination="YfH-wt-tIc" id="hFi-R0-NZ5"/>
+                        <outlet property="firstSectionView" destination="YfH-wt-tIc" id="hFi-R0-NZ5"/>
                         <outlet property="redViewHeightConstraint" destination="7qH-r5-stS" id="Yux-Uk-Nzc"/>
+                        <outlet property="secondSectionView" destination="Feb-DU-zoy" id="lgs-x8-QS4"/>
+                        <outlet property="thirdSectionView" destination="c3h-d9-SPc" id="Xb5-18-bV0"/>
                         <outlet property="turnButton" destination="thM-Mf-2ca" id="3xo-ts-JGp"/>
                     </connections>
                 </viewController>
