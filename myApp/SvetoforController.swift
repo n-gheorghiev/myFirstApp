@@ -14,8 +14,6 @@ class SvetoforController: UIViewController {
     @IBOutlet weak var secondSectionView: SvetoforSectionView!
     @IBOutlet weak var thirdSectionView: SvetoforSectionView!
     
-//    let blueView = UIView(frame: .zero)
-    
     @IBOutlet weak var turnButton: UIButton!
         
     @IBOutlet weak var redViewHeightConstraint: NSLayoutConstraint!
@@ -26,44 +24,36 @@ class SvetoforController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let arrayView = [firstSectionView, secondSectionView, thirdSectionView]
-//        
-//        for view in arrayView {
-//            configureView(view!)
-//        }
+        firstSectionView.turnOff()
+        secondSectionView.turnOff()
+        thirdSectionView.turnOff()
         
-//        blueView.backgroundColor = .blue
-//        view.addSubview(blueView)
-//
-//        blueView.snp.makeConstraints { make in
-//            make.width.height.equalTo(100)
-//            make.centerX.equalToSuperview()
-//            make.top.equalTo(greenView.snp.bottom).offset(32)
-//        }
+        firstSectionView.colorLight = .red
+        secondSectionView.colorLight = .orange
+        thirdSectionView.colorLight = .green
     }
     
     // MARK: - Пользовательские функции
     
-//    func configureView(_ view: UIView) {
-//        view.layer.cornerRadius = redViewHeightConstraint.constant / 2
-//        view.layer.borderWidth = 2
-//        view.layer.borderColor = UIColor.black.cgColor
-//        view.backgroundColor = .clear
-//    }
-    
     // MARK: - Actions
     
     @IBAction func turnButtonAction(_ sender: Any) {
-        if firstSectionView.backgroundColor == .clear && secondSectionView.backgroundColor == .clear && thirdSectionView.backgroundColor == .clear {
-            firstSectionView.backgroundColor = .red
-        } else if firstSectionView.backgroundColor == .red {
-            firstSectionView.backgroundColor = .clear
-            secondSectionView.backgroundColor = .orange
-        } else if secondSectionView.backgroundColor == .orange {
-            secondSectionView.backgroundColor = .clear
-            thirdSectionView.backgroundColor = .green
-        } else if thirdSectionView.backgroundColor == .green {
-            thirdSectionView.backgroundColor = .clear
+        // Если ВСЕ секции выключены, то включи первую
+        // если ПЕРВАЯ секция включена, то выключи первую, включи вторую
+        // если ВТОРАЯ секция включена, то выключи вторую, включи третью
+        // если ТРЕТЬЯ секция включена, то выключи третью, включи первую
+        
+        if firstSectionView.isOff() && secondSectionView.isOff() && thirdSectionView.isOff() {
+            firstSectionView.turnOn()
+        } else if firstSectionView.isOn() {
+            firstSectionView.turnOff()
+            secondSectionView.turnOn()
+        } else if secondSectionView.isOn() {
+            secondSectionView.turnOff()
+            thirdSectionView.turnOn()
+        } else if thirdSectionView.isOn() {
+            thirdSectionView.turnOff()
+            firstSectionView.turnOn()
         }
     }
     
