@@ -12,10 +12,10 @@ class SvetoforView: UIView {
     
     private let sections: [SvetoforSectionView] = [SvetoforSectionView(colorLight: .red),
                                                    SvetoforSectionView(colorLight: .red),
-                                                   SvetoforSectionView(colorLight: .blue),
+                                                   SvetoforSectionView(colorLight: .green),
                                                    SvetoforSectionView(colorLight: .red),
-                                                   SvetoforSectionView(colorLight: .yellow),
-                                                   SvetoforSectionView(colorLight: .red)]
+                                                   SvetoforSectionView(colorLight: .green),
+                                                   SvetoforSectionView(colorLight: .orange)]
     
     private let stackView = UIStackView(frame: .zero)
     
