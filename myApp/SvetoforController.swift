@@ -10,13 +10,13 @@ import SnapKit
 
 class SvetoforController: UIViewController {
 
-    @IBOutlet weak var firstSectionView: SvetoforSectionView!
-    @IBOutlet weak var secondSectionView: SvetoforSectionView!
-    @IBOutlet weak var thirdSectionView: SvetoforSectionView!
+    var firstSectionView = SvetoforSectionView(colorLight: .red)
+    var secondSectionView = SvetoforSectionView(colorLight: .orange)
+    var thirdSectionView = SvetoforSectionView(colorLight: .green)
+    
+    let stackView = UIStackView(frame: .zero)
     
     @IBOutlet weak var turnButton: UIButton!
-        
-    @IBOutlet weak var redViewHeightConstraint: NSLayoutConstraint!
     
     // MARK: - Системные функции
 
@@ -24,16 +24,40 @@ class SvetoforController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.addSubview(stackView)
+        
+        stackView.spacing = 12
+        stackView.axis = .vertical
+        stackView.alignment = .center
+        stackView.distribution = .fill
+        
+        stackView.addArrangedSubview(firstSectionView)
+        stackView.addArrangedSubview(secondSectionView)
+        stackView.addArrangedSubview(thirdSectionView)
+        
+        stackView.snp.makeConstraints { make in
+            make.width.equalTo(300)
+            make.height.greaterThanOrEqualTo(300)
+            make.top.equalTo(64)
+            make.centerX.equalToSuperview()
+        }
+        
+        firstSectionView.snp.makeConstraints { make in
+            make.width.height.equalTo(100)
+        }
+        
+        secondSectionView.snp.makeConstraints { make in
+            make.width.height.equalTo(100)
+        }
+        
+        thirdSectionView.snp.makeConstraints { make in
+            make.width.height.equalTo(100)
+        }
+        
         firstSectionView.turnOff()
         secondSectionView.turnOff()
         thirdSectionView.turnOff()
-        
-        firstSectionView.colorLight = .red
-        secondSectionView.colorLight = .orange
-        thirdSectionView.colorLight = .green
     }
-    
-    // MARK: - Пользовательские функции
     
     // MARK: - Actions
     

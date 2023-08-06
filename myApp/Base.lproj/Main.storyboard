@@ -16,24 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfH-wt-tIc" customClass="SvetoforSectionView" customModule="myApp" customModuleProvider="target">
-                                <rect key="frame" x="145" y="44" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="6Kr-fl-sRp"/>
-                                    <constraint firstAttribute="height" constant="100" id="7qH-r5-stS"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Feb-DU-zoy" customClass="SvetoforSectionView" customModule="myApp" customModuleProvider="target">
-                                <rect key="frame" x="145" y="188" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3h-d9-SPc" customClass="SvetoforSectionView" customModule="myApp" customModuleProvider="target">
-                                <rect key="frame" x="145" y="332" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thM-Mf-2ca">
-                                <rect key="frame" x="96.666666666666671" y="582" width="196.66666666666663" height="80"/>
+                                <rect key="frame" x="96.666666666666671" y="722" width="196.66666666666663" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="grU-vX-ifw"/>
                                 </constraints>
@@ -49,45 +33,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YfH-wt-tIc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Ph-sI-NfU"/>
-                            <constraint firstItem="c3h-d9-SPc" firstAttribute="top" secondItem="Feb-DU-zoy" secondAttribute="bottom" constant="44" id="9XX-Nc-SCE"/>
-                            <constraint firstItem="Feb-DU-zoy" firstAttribute="width" secondItem="YfH-wt-tIc" secondAttribute="width" id="G6u-Ln-gKZ"/>
-                            <constraint firstItem="c3h-d9-SPc" firstAttribute="height" secondItem="YfH-wt-tIc" secondAttribute="height" id="HC2-P6-eE1"/>
-                            <constraint firstItem="thM-Mf-2ca" firstAttribute="top" secondItem="c3h-d9-SPc" secondAttribute="bottom" constant="150" id="Joe-Xl-uEw"/>
-                            <constraint firstItem="Feb-DU-zoy" firstAttribute="top" secondItem="YfH-wt-tIc" secondAttribute="bottom" constant="44" id="Kut-Gr-Dgj"/>
-                            <constraint firstItem="c3h-d9-SPc" firstAttribute="width" secondItem="YfH-wt-tIc" secondAttribute="width" id="XPW-Fk-4b6"/>
-                            <constraint firstItem="Feb-DU-zoy" firstAttribute="height" secondItem="YfH-wt-tIc" secondAttribute="height" id="ejU-Dx-DUT"/>
-                            <constraint firstItem="c3h-d9-SPc" firstAttribute="centerX" secondItem="YfH-wt-tIc" secondAttribute="centerX" id="jEN-yH-Wec"/>
-                            <constraint firstItem="YfH-wt-tIc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oYi-AT-eZU"/>
-                            <constraint firstItem="Feb-DU-zoy" firstAttribute="centerX" secondItem="YfH-wt-tIc" secondAttribute="centerX" id="trD-WL-L8e"/>
-                            <constraint firstItem="thM-Mf-2ca" firstAttribute="centerX" secondItem="YfH-wt-tIc" secondAttribute="centerX" id="w6s-1j-Pfz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="thM-Mf-2ca" secondAttribute="bottom" constant="8" id="OL4-fe-jf4"/>
+                            <constraint firstItem="thM-Mf-2ca" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XR2-Cs-wjn"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="firstSectionView" destination="YfH-wt-tIc" id="hFi-R0-NZ5"/>
-                        <outlet property="redViewHeightConstraint" destination="7qH-r5-stS" id="Yux-Uk-Nzc"/>
-                        <outlet property="secondSectionView" destination="Feb-DU-zoy" id="lgs-x8-QS4"/>
-                        <outlet property="thirdSectionView" destination="c3h-d9-SPc" id="Xb5-18-bV0"/>
                         <outlet property="turnButton" destination="thM-Mf-2ca" id="3xo-ts-JGp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="61"/>
+            <point key="canvasLocation" x="33.846153846153847" y="60.426540284360186"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
