@@ -15,6 +15,7 @@
 		F45EF5972A7AEC3B00286386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45EF5952A7AEC3B00286386 /* LaunchScreen.storyboard */; };
 		F45EF5A02A7BF44600286386 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F45EF59F2A7BF44600286386 /* SnapKit */; };
 		F4CEBB842A7D6F15008C7CE4 /* SvetoforSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CEBB832A7D6F15008C7CE4 /* SvetoforSectionView.swift */; };
+		F4CEBB862A7FD443008C7CE4 /* SvetoforView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CEBB852A7FD443008C7CE4 /* SvetoforView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F45EF5962A7AEC3B00286386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F45EF5982A7AEC3B00286386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4CEBB832A7D6F15008C7CE4 /* SvetoforSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvetoforSectionView.swift; sourceTree = "<group>"; };
+		F4CEBB852A7FD443008C7CE4 /* SvetoforView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvetoforView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				F45EF58C2A7AEC3800286386 /* SceneDelegate.swift */,
 				F45EF58E2A7AEC3800286386 /* SvetoforController.swift */,
 				F4CEBB832A7D6F15008C7CE4 /* SvetoforSectionView.swift */,
+				F4CEBB852A7FD443008C7CE4 /* SvetoforView.swift */,
 				F45EF5902A7AEC3800286386 /* Main.storyboard */,
 				F45EF5932A7AEC3B00286386 /* Assets.xcassets */,
 				F45EF5952A7AEC3B00286386 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 			files = (
 				F4CEBB842A7D6F15008C7CE4 /* SvetoforSectionView.swift in Sources */,
 				F45EF58F2A7AEC3800286386 /* SvetoforController.swift in Sources */,
+				F4CEBB862A7FD443008C7CE4 /* SvetoforView.swift in Sources */,
 				F45EF58B2A7AEC3800286386 /* AppDelegate.swift in Sources */,
 				F45EF58D2A7AEC3800286386 /* SceneDelegate.swift in Sources */,
 			);
